@@ -29,19 +29,18 @@ coverage:
 	uv run --python=3.12 coverage run -m pytest
 	uv run --python=3.13 coverage run -m pytest
 	uv run --python=3.14 coverage run -m pytest
-	uv run --python=3.14 coverage combine
-	uv run --python=3.14 coverage report
-	uv run --python=3.14 coverage html
+	uv run coverage combine
+	uv run coverage report
+	uv run coverage html
 
 format:
 	uv run ruff format .
 
 lint:
 	uv run ruff check . --fix
-	uv run ruff check --select I --fix .
 
 type-check:
-	uv run ty check --output-format=concise .
+	uv run --all-extras ty check --output-format=concise .
 
 qa: format lint type-check test
 

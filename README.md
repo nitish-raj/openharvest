@@ -1,8 +1,6 @@
 <p align="center">
-  <img src="datasluice.png" alt="DataSluice" width="200">
+  <img src="docs/assets/datasluice.png" alt="DataSluice" width="600">
 </p>
-
-<h1 align="center">DataSluice</h1>
 
 <p align="center">
   One Python interface for open-data discovery, extraction, format normalization, and pipeline integration
@@ -50,6 +48,12 @@ To set up for local development:
 # Clone your fork
 git clone git@github.com:your_username/datasluice.git
 cd datasluice
+
+# Install dependencies (including all optional deps for dev)
+uv sync --all-extras
+
+# Install just (task runner) — one-time setup
+curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to .venv/bin
 
 # Install in editable mode with live updates
 uv tool install --editable .

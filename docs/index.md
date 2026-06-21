@@ -1,4 +1,6 @@
-# <img src="assets/datasluice.png" alt="DataSluice" width="120"> DataSluice
+<p align="center">
+  <img src="assets/datasluice.png" alt="DataSluice" width="800">
+</p>
 
 One Python interface for open-data discovery, extraction, format normalization, and pipeline integration.
 

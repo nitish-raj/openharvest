@@ -13,6 +13,12 @@ uv run <command>       # run anything in the project venv
 
 `--all-extras` is **required** for type checking and running pre-commit locally, because `ty` resolves lazy imports of optional deps (pandas, polars, dlt, duckdb, pyarrow, openpyxl, airflow). Without it you get `unresolved-import` errors.
 
+`just` (task runner) is a Rust binary, not a pip package. Install it into the venv:
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | bash -s -- --to .venv/bin
+```
+If `just` is missing, `make` works as a zero-dependency fallback (same targets).
+
 ## Developer commands
 
 | Task | Command |
