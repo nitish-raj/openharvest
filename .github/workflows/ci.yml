@@ -46,7 +46,7 @@ jobs:
       - uses: astral-sh/setup-uv@fac544c07dec837d0ccb6301d7b5580bf5edae39 # v8.2.0
 
       - name: Type check with ty
-        run: uv run ty check .
+        run: uv run --all-extras ty check .
 
   test:
     name: Test (Python ${{ matrix.python-version }})
