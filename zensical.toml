@@ -5,8 +5,8 @@ repo_url = "https://github.com/nitish-raj/datasluice"
 repo_name = "nitish-raj/datasluice"
 
 [project.theme]
-logo = "assets/datasluice.png"
-favicon = "assets/datasluice.png"
+logo = "assets/datasluice-logo-nbg.png"
+favicon = "assets/datasluice-logo-nbg.png"
 
 nav = [
   { "Home" = "index.md" },
